@@ -1,0 +1,110 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 10px 10px #ccc;
+  background: #ccb8e0;
+  border-radius: 10px;
+}
+
+.ModalClose{
+  display: none;
+}
+.Modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  justify-content: space-evenly;
+  padding-left: 45%;
+
+}
+
+input{
+  padding: 5px;
+  margin: 5px 0;
+  color: #f8f8f8 ;
+  border-radius: 25px;
+  border:  1px solid rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.1);
+  color: #f8f8f8;
+  height: 20px;
+  min-width: 170px;
+  max-width: 420px;
+  flex-grow: 2;
+  
+}
+.input-block {
+  display: flex;
+}
+
+::placeholder{color:#f8f8f8;}
+
+.buttons-wrapper{
+  display: flex;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+button{
+  display: inline-block;
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px #000000;  
+}
+.button-delete{background-color: #fccacf;}      
+.button-create{background-color:#ccf0a8;} 
+.button-update{background-color: #e6ccff;}
+.button-add{
+  background-color: #ccf0a8	; 
+  margin-left: 35%;
+  margin-top: 2%;
+}
+
+.button:hover {
+  background-position: right center; 
+}
+table{
+  display: block;
+  margin: auto;
+  table-layout: fixed;
+  overflow: hidden;
+  border-collapse: collapse;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 10px 10px #ccc;
+  border-radius: 10px;
+  white-space: nowrap;
+  max-width: 80%;  
+}
+th,td{
+  min-width: 10px;
+  border: 1px solid rgb(255, 255, 255) ;
+  text-align: left;
+  padding: 5px;
+  font-size: 15px;
+  color: #ffffff; 
+}
+th{
+  background-color: #e56e94;
+  font-size: 25px;
+  
+}
+
+td{
+  background: rgba(255,255,255,0.2);
+  color: #f8f8f8;
+  
+}
+td:first-child{min-width: 10px;}
